@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&family=Baloo+Bhaina+2&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <title>Milko Foods</title>
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="../logo.jpg" alt="Milko Foods">
+    </div>
+    <ul>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">Services</a></li>
+      <li class="item"><a href="#">Contact Us</a></li>
+      <li class="item"><a href="#">About Us</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1 class="h-primary">Welcome to Milko Foods</h1>
+    <p>Milko foods is portraying about the firm named MILKO located near India Gate, Bypass,Amritsar.</p>
+    <p>''QUALITY IS OUR MOTTO''</p>
+    <button class="btn">Contact now</buttonn>
+  </section>
+  <section class="services-container">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+      <div class="box">
+        <img src="https://th.bing.com/th/id/OIP.cfay6talEjmlLl9nBBsO5QHaE8?pid=ImgDet&rs=1" alt="">
+        <h2 class="h-secondary center">Milk</h2>
+      </div>
+    <div class="box">
+      <img src="../Curd.jpg" alt="">
+      <h2 class="h-secondary center">Curd</h2>
+    </div>
+    <div class="box">
+      <img src="../Paneer.jpg" alt="">
+      <h2 class="h-secondary center">Paneer/Tofu</h2>
+    </div>
+  </div>
+  <div id="services">
+<div class="box">
+      <img src="../Lassi.jpg" alt="">
+      <h2 class="h-secondary center">Lassi</h2>
+    </div>
+    <div class="box">
+      <img src="../Ghee.jpg" alt="">
+      <h2 class="h-secondary center">Ghee</h2>
+    </div>
+    <div class="box">
+      <img src="../Khoya.jpg" alt="">
+      <h2 class="h-secondary center">Khoya</h2>
+    </div>
+  </div>
+  </section>
+  <section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+          <label for="name">Contact No.</label>
+          <input type="contact" name="contact" id="contact" placeholder="Enter Your Contact Number">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+          <label for="name">Message</label>
+          <textarea name="mesaage" id="message" cols="30" rows="10"></textarea>
+        </div>
+        </form>
+    </div>
+  </section>
+  <section id="About">
+    <h1 class="h-primary center">About Us</h1>
+    <div id="about">
+      <p>
+        Milko foods is located near India Gate , Bypass , Amritsar .
+
+You can encounter a variety of milk products in this firm .
+
+With a vast range of high-tech machinery , we try our best to ensure that you recieve a safe , healthy and delicious product.
+
+Our main goal is to provide you a quality product as ' QUALITY IS OUR MOTTO '. 
+One of our mottos is also helping the farmers as everybody is very well aware of the fact that farmers are one of the foundation pillars of a country but they are the ones who suffer huge setbacks.
+</p>
+  </section>
+  <footer>
+    <div class="center">
+      Copyright &copy; www.milkofoods.com. All rights reserved!
+    </div>
+  </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
